@@ -1,4 +1,5 @@
-License for the ADAblock code:
+License for the ADAblock code.
+The original can be obtained at: https://github.com/MurphysLab/ADAblock
 
 Copyright © 2015 Jeffrey N. Murphy
 
