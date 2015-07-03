@@ -1,6 +1,6 @@
-#ADAblock for ImageJ
+ADAblock for ImageJ
 ====================
-*Automated Defect Analysis of Block Copolymers*
+***Automated Defect Analysis of Block Copolymers***
 
 
 *Jeffrey N. Muprhy*
