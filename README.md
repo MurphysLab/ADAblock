@@ -1,7 +1,7 @@
 ADAblock for ImageJ
 --------------------
 ***Automated Defect Analysis of Block Copolymers***
-====================
+
 
 *Jeffrey N. Muprhy*
 [@MurphysLab](https://twitter.com/MurphysLab)
