@@ -8,7 +8,7 @@ ADAblock for ImageJ
 
 ---------------------
 
-Code written for the analysis of line patterns produced from the domains of block copolymer thin films.
+Code written for the analysis of defects in line patterns produced from the domains of block copolymer thin films.
 Sample SEM images can be obtained from [https://hdl.handle.net/10402/era.41438](https://hdl.handle.net/10402/era.41438).
 
 The code is made available for use and modification under the "[MIT License](https://opensource.org/licenses/MIT)".
