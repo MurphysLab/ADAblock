@@ -5251,6 +5251,8 @@ Before skeletonization:
 		run("Multiply...", "value=0.2");
 		changeValues(0,255,0);
 		run("Duplicate...", "title=blueB");
+		// The following is to prevent deletion of blueB from somewhere
+		run("Duplicate...", "title=blueB2");
 		
 		//MAGENTA: Positive Dots
 		selectImage(image_positive_dots);  //**
