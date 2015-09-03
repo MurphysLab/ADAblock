@@ -31,7 +31,7 @@ period_default_nm = 50;
 auto_smoothing_factor = 0.15;
 period_range_min_nm = 4; //nm // For FFT period auto-detection
 period_range_max_nm = 100; //nm // For FFT period auto-detection
-binary_groomming = true; // Include a binary grooming step to reduce extra defects.
+binary_grooming = true; // Include a binary grooming step to reduce extra defects.
 
 // END OF MODIFIABLE DEFINED VARIABLES  //}}}
 
@@ -2605,7 +2605,7 @@ for(img_i=0; img_i<image_list.length; img_i++){
 	
 	
 	next_time = false;
-	now = false
+	now = false;
 	
 	while(px_groom_condition){
 	//start = getTime();
@@ -5251,6 +5251,8 @@ Before skeletonization:
 		run("Multiply...", "value=0.2");
 		changeValues(0,255,0);
 		run("Duplicate...", "title=blueB");
+		// The following is to prevent deletion of blueB from somewhere
+		run("Duplicate...", "title=blueB2");
 		
 		//MAGENTA: Positive Dots
 		selectImage(image_positive_dots);  //**
