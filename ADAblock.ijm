@@ -2095,8 +2095,8 @@ for(img_i=0; img_i<image_list.length; img_i++){
 	// END OF IMAGE IMPORT  //}}}
 	
 	// IMAGE VIABILITY  //{{{
-		viable_image = true;
-		if(bitDepth() != 8){viable_image = false;}
+		viable_image = true; 
+		if(bitDepth() != 8){viable_image = false;} else { run("8-bit"); } // Fix to turn "8-bit Color" images to plain "8-bit"
 		//else if(true){viable_image = false;}  // Other reasons...
 	// END OF IMAGE VIABILITY  //}}}
 	
