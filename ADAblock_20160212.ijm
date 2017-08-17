@@ -1,29 +1,19 @@
-// ImageJ BCP Structure Analysis Framework  
-
-//{{{ collapse all...
+// ImageJ BCP Structure Analysis Framework  //{{{ collapse all...
 
 // ABOUT THE CODE
 
-	/* ADAblock: Automated Defect Analysis of Block Copolymers
-	 *  
-	 *   ImageJ Macro Code Implementation of Defect Analysis Algorithm
-	 *   Version: 0.50i  Date: 2015.01.30  Author: Jeffrey N. Murphy
-	 *   Updated versions available at: https://github.com/MurphysLab/ADAblock
-	 *   
-	 * The algorithm is described in the following paper: 
-	 *   
-	 *   Automated Defect and Correlation Length Analysis of Block Copolymer Thin Film Nanopatterns
-	 *   Jeffrey N. Murphy , Kenneth D. Harris, Jillian M. Buriak 
-	 *   PLoS ONE 10(7): e0133088
-	 *   Published: July 24, 2015
-	 *   URL: https://doi.org/10.1371/journal.pone.0133088
-	 *   DOI: 10.1371/journal.pone.0133088
-	 */
+	// ADAblock: Automated Defect Analysis of Block Copolymers
+	// ImageJ Macro Code Implementation of Defect Analysis Algorithm
+	// Version: 0.50i  Date: 2015.01.30  Author: Jeffrey N. Murphy
+	// Updated versions available at: 
+	// The algorithm is described in the following paper: 
+	// ..................................................
+	// DOI: 
 
 // SETTINGS  /{{{
 	program_name = "ADAblock";
-	program_version = "v1.02"; prog_version = 1.02;
-	modification_date = "2017.08.17";
+	program_version = "v1.00"; prog_version = 1.00;
+	modification_date = "2015.06.02";
 	d_mode = 1; //(diagnostc mode)
 	requires("1.49o"); // Requires Latest Version of ImageJ
 	// http://fiji.sc/wiki/index.php/Auto_Threshold
@@ -2586,14 +2576,6 @@ for(img_i=0; img_i<image_list.length; img_i++){
 	outputTD("Up_Thresh",upper_threshold);
 	outputTD("Low_Thresh",lower_threshold);
 	print("Threshold\nLower: "+ lower_threshold + "\nUpper: " + upper_threshold);
-	
-	/* Following line, setThreshold(128,255), is added to change the behaviour 
-	 * of the run("Make Binary") command. Without this line, the phases (bright and dark) 
-	 * may be inverted, depending on the area fraction, such that the phase with the larger
-	 * area fraction will always become the "positive" phase. 
-	 * cf: http://imagej.1557.x6.nabble.com/binary-image-inversion-irritation-td5004727.html
-	 */
-	setThreshold(128,255);
 	run("Make Binary");
 	saveAs("tiff",save_subfolder+"image004"+".tif"); 
 	// END OF THRESHOLDING  //}}}
